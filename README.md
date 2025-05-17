@@ -5,7 +5,7 @@
 # Detección de noticias falsas 📰
 
 ## Descripción del proyecto 
-El proyecto presenta un detector de noticias falsas, en el cual se busca hacer un preprocesado de datos obtenidos de un dataset para su posterior clasificación binanria.
+El proyecto presenta un detector de noticias falsas, en el cual se busca hacer un preprocesado de datos obtenidos de un dataset de Kaggle para su posterior clasificación binaria (verdadero o falso).
 
 ## Descripción del Dataset
 Es un conjunto de datos creado para practicar la detección de noticias falsas mediante técnicas de aprendizaje automático y procesamiento de lenguaje natural. Contiene 20,000 artículos con etiquetas que indican si son reales o falsos (incluye metadatos). Aproximadamente un 5% de los datos presentan valores faltantes para simular desafíos reales con información incompleta.
@@ -20,7 +20,10 @@ Es un conjunto de datos creado para practicar la detección de noticias falsas m
 
 # Proceso
 ## Obtener, generar o aumentar un set de datos.
-El Dataset utilizado para el proyecto fue obtenido en la plataforma Kaggle. Posteriormente se almacenó en una carpeta de Google Drive para su manipulación dentro del modelo.
+El Dataset utilizado para el proyecto fue obtenido en la plataforma Kaggle. Posteriormente se almacenó en una carpeta de Google Drive para su manipulación dentro del modelo de Machine Learning (ML).
 
 ## Preprocesado y data splitting de Entrenamiento y Validación.
-De forma manual, se 
+De forma manual, se separó la información contenida en el dataset para entrenar, validar y probar el modelo de ML.
+* Entrenamiento: 60%
+* Validación: 20%
+* Prueba: 20%
