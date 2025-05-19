@@ -24,6 +24,10 @@ El Dataset utilizado para el proyecto fue obtenido en la plataforma Kaggle. Post
 
 ## Preprocesado y data splitting de Entrenamiento y Validación.
 De forma manual, se separó la información contenida en el dataset para entrenar, validar y probar el modelo de ML.
-* Entrenamiento: 60%
-* Validación: 20%
+* Entrenamiento: 80%
 * Prueba: 20%
+
+## Técnicas de escalamiento para aumentación y preprocesado
+Se realizó la vectorización (TF-IDF) para eliminar palabras comunes en inglés y descartar palabras demasiado frecuentes del texto para manejarlo de una forma más eficiente. Se ajusta el vectorizador al conjunto de entrenamiento (X_train) y se transforma este conjunto en una matriz numérica basada en TF-IDF.
+
+También se hizo un escalamiento debido a que es una **matriz dispersa** en la que la mayoría de los valores son ceros (como las que suelen generarse al usar representaciones como TF-IDF en procesamiento de texto).
