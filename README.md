@@ -6,19 +6,17 @@
 
 ## Descripción del proyecto
 
-El proyecto presenta un detector de noticias falsas, en el cual se busca hacer un preprocesado de datos obtenidos de un dataset de Kaggle para su posterior clasificación binaria (verdadero o falso).
+El proyecto presenta un detector de noticias falsas con aprendizaje automático, en el cual se busca hacer un preprocesado de datos obtenidos de un dataset de Kaggle para su posterior clasificación binaria (verdadero o falso).
 
 ## Descripción del Dataset
 
 Es un conjunto de datos creado para practicar la detección de noticias falsas mediante técnicas de aprendizaje automático y procesamiento de lenguaje natural. Contiene 20,000 artículos con etiquetas que indican si son reales o falsos (incluye metadatos). Aproximadamente un 5% de los datos presentan valores faltantes para simular desafíos reales con información incompleta.
 
--   title A short headline summarizing the article (around 6 words).
--   text The body of the news article (200–300 words on average).
--   date The publication date of the article, randomly selected over the past 3 years.
--   source The media source that published the article (e.g., BBC, CNN, Al Jazeera). May contain missing values (~5%).
--   author The author's full name. Some entries are missing (~5%) to simulate real-world incomplete data.
--   category The general category of the article (e.g., Politics, Health, Sports, Technology).
--   label The target label: real or fake news.
+- title - El titular del artículo
+- text - El cuerpo completo de la noticia
+- subject - La categoría o tema (por ejemplo, política, noticias mundiales, etc.)
+- date - La fecha de publicación
+
 
 # Proceso
 
@@ -39,10 +37,21 @@ Se realizó la vectorización (TF-IDF) para eliminar palabras comunes en inglés
 
 También se hizo un escalamiento debido a que es una **matriz dispersa** en la que la mayoría de los valores son ceros (como las que suelen generarse al usar representaciones como TF-IDF en procesamiento de texto).
 
+## Resultados
+
+[Ver el reporte de resultados obtenidos](Resultados_btenidos.pdf)
+
 ## Autor
+Instituto Tecnológico y de Estudios Superiores de Monterrey
 
 Alan Fernando Razo Peña - alanrazo2000@hotmail.com
 
 ## Bibliografía
 
 [1] P. Kumar, P. Suthanthiradevi, C. A. Stephen, E. Abishek B, S. Sivakumar, and M. Mathiyarasu, “Analysis and Detection of Fake News Using Machine Learning,” May 2024, doi: 10.1109/aiiot58432.2024.10574761
+
+[1]
+I. Jahan et al., “Advanced machine learning techniques for fake news detection: A comprehensive analysis,” Magna Scientia Advanced Research and Reviews, vol. 12, no. 2, pp. 203–212, Dec. 2024, doi: 10.30574/msarr.2024.12.2.0198
+
+[1]
+S. Velumuru, “Fake News Detection System Using Machine Learning and Deep Learning,” Indian Scientific Journal Of Research In Engineering And Management, Apr. 2024, doi: 10.55041/ijsrem30766
