@@ -39,7 +39,7 @@ También se hizo un escalamiento debido a que es una **matriz dispersa** en la q
 
 ## Resultados
 
-[Ver el reporte de resultados obtenidos](Resultados_btenidos.pdf)
+[Ver el reporte de resultados obtenidos](Resultados_obtenidos.pdf)
 
 ## Autor
 Instituto Tecnológico y de Estudios Superiores de Monterrey
