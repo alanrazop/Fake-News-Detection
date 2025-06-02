@@ -37,6 +37,32 @@ Se realizó la vectorización (TF-IDF) para eliminar palabras comunes en inglés
 
 También se hizo un escalamiento debido a que es una **matriz dispersa** en la que la mayoría de los valores son ceros (como las que suelen generarse al usar representaciones como TF-IDF en procesamiento de texto).
 
+## Construcción del modelo
+
+Una vez que los datos han sido preprocesados, se procede a la construcción y entrenamiento del modelo.
+
+### Hiperparámetros utilizados:
+- **Capas Densas**: Se emplearon 3 capas con diferentes profundidades y técnicas de dropout para prevenir el sobreajuste.
+- **Tamaño del Lote**: Se estableció en 64, buscando un equilibrio entre el ruido y la eficiencia.
+- **Threshold**: Se disminuyó de 0.5 a 0.3 para favorecer la sensibilidad en la detección de las clases.
+
+### Matriz de Confusión
+
+Para evaluar el rendimiento del modelo, se empleó una matriz de confusión, que facilita la visualización de:
+- Verdaderos positivos (TP)
+- Verdaderos negativos (TN)
+- Falsos positivos (FP)
+- Falsos negativos (FN)
+
+Esto no solo permite medir la precisión general del modelo, sino también comprender su comportamiento en relación con cada clase.
+### Métricas
+
+Se utilizaron las siguientes métricas para evaluar el rendimiento del modelo de predicción:
+- Precisión: Cuántos eran realmente positivos
+- Recall: De los TP, cuántos detectó el modelo
+- F1 Score: Media entre Precisión y Recall
+- Support: Cantidad de "fake" y "true" que había.
+
 ## Resultados
 
 [Ver el reporte de resultados obtenidos](Reporte_resultados.pdf)
